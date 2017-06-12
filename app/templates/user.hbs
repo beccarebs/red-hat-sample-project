@@ -1,0 +1,18 @@
+<div class="container">
+	<ul class="list-group">
+		<li class="list-group-item"><strong>ID:</strong> {{model.id}}</li>
+		<li class="list-group-item"><strong>Name:</strong> {{model.name}}</li>
+		<li class="list-group-item"><strong>Username:</strong> {{model.username}}</li>
+		<li class="list-group-item"><strong>Email:</strong> {{model.email}}</li>
+		<li class="list-group-item"><strong>Address:</strong> {{model.address.street}} <strong>Suite:</strong> {{model.address.suite}}</li>
+		<li class="list-group-item"><strong>Zipcode:</strong> {{model.address.zipcode}}</li>
+		<li class="list-group-item"><strong>Latitude:</strong> {{model.address.geo.lat}}</li>
+		<li class="list-group-item"><strong>Longitude:</strong> {{model.address.geo.lng}}</li>
+		<li class="list-group-item"><strong>Phone:</strong> {{model.phone}}</li>
+		<li class="list-group-item"><strong>Website:</strong> {{model.website}}</li>
+		<li class="list-group-item"><strong>Company Name: </strong> {{model.company.name}}</li>
+		<li class="list-group-item"><strong>Company Catchphrase:</strong> {{model.company.catchPhrase}}</li>
+		<li class="list-group-item"><strong>Company BS: </strong> {{model.company.bs}}</li>
+	</ul>
+</div>
+{{outlet}}
